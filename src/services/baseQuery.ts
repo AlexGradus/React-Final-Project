@@ -3,7 +3,7 @@ import { fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 import store from 'store';
 
 export const baseQuery = fetchBaseQuery({
-  baseUrl: 'https://final-task-backend-production-c2d6.up.railway.app/',
+  baseUrl: "https://final-task-backend-production-c2d6.up.railway.app/",
   prepareHeaders: (headers, { getState }) => {
     const { user } = (getState() as ReturnType<typeof store.getState>).app;
     if (user) {
